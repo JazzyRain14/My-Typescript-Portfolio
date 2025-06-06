@@ -44,17 +44,17 @@ export default function TasteBook() {
 
   return (
     <>
-      <div className="flex flex-col w-full">
+      <div className="flex flex-col w-full items-center justify-center">
         <AlphabetFilter onSelect={setSelectedLetter} />
         {loading && <span className="loading loading-dots loading-xl m-auto my-4"></span>}
-        {!loading && meals && meals.length === 0 && (
+        {!loading && meals && meals.length === 0 ? (
           <p>No meals found for "{selectedLetter.toUpperCase()}"</p>
-        )}
+        ) : (<h1 className="text-center">All meals that starts with "{selectedLetter.toUpperCase()}"</h1>)}
         {Array.isArray(meals) ? (
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-4">
             {meals.map((meal) => (
               <Link to={`/meal/${meal.idMeal}`} key={meal.idMeal}>
-                <main className="card bg-base-100 w-96 shadow-md">
+                <main className="card-sm md:card bg-base-100 w-full md:w-96 shadow-md">
                   <figure>
                     <img
                       src={meal.strMealThumb}

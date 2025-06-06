@@ -13,7 +13,7 @@ export default function App() {
   return (
     <div className="flex flex-col min-h-screen">
       <NavBar />
-      <main className="flex-grow flex items-center justify-center p-2 md:px-12 md:py-5 ">
+      <main className="flex-grow flex items-center w-full justify-center p-2 md:px-12 md:py-5 ">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/todoapp" element={<Todo/>} />

@@ -16,7 +16,7 @@ export default function AlphabetFilter({ onSelect }: AlphabetFilterProps) {
                 row.map((letter) => (
                     <button
                         key={letter}
-                        className="bg-gray-800 text-white px-4 py-2 rounded-md hover:bg-gray-600 transition"
+                        className="bg-gray-800 text-white p-2 text-sm sm:text-base sm:px-2 sm:py-1 md:px-4 md:py-2 rounded-md hover:bg-gray-600 transition"
                         onClick={() => onSelect(letter.toLowerCase())}>
                         {letter}
                     </button>
@@ -25,7 +25,7 @@ export default function AlphabetFilter({ onSelect }: AlphabetFilterProps) {
         </div>
     );
     return (
-        <div className="">
+        <div className="max-md:w-full">
             {renderRow(row1)}
             {renderRow(row2)}
             {renderRow(row3)}
