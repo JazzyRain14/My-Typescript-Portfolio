@@ -25,7 +25,7 @@ export default function NavBar() {
                             <li><Link to="/aboutme">About Me</Link></li>
                         </ul>
                     </div>
-                    <a className="btn btn-ghost max-md:hidden h-auto" href="#">
+                    <a className="max-md:hidden h-auto" href="#">
                         <img src="/reactts.svg" alt="React*Ts" className="w-20 h-auto" />
                     </a>
                 </div>
@@ -45,7 +45,7 @@ export default function NavBar() {
                         <li><Link to="/aboutme" className="flex items-center gap-2 font-semibold">About Me</Link></li>
                     </ul>
                 </div>
-                <a className="btn btn-ghost text-xl hidden max-md:navbar-end">
+                <a className="text-xl hidden max-md:navbar-end">
                     <img src="/reactts.svg" alt="React*Ts" className="w-20 h-auto" />
                 </a>
             </div>
