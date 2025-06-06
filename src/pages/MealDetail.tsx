@@ -56,14 +56,14 @@ export default function MealDetail() {
     return (
         <>
             {meal ? (
-                <div className="card md:card-side relative bg-base-100 shadow-sm">
+                <div className="card md:card-side relative bg-base-100 shadow-sm py-5">
                     <figure>
                         <img
                             className=" max-h-full h-full"
                             src={meal.strMealThumb}
                             alt="Movie" />
                     </figure>
-                    <button onClick={()=>navigate(-1)} className="btn bg-base-10 m-5 text absolute top-0 left-0"><FaArrowLeft /> Go Back</button>
+                    <button onClick={()=>navigate(-1)} className="btn bg-base-10 text m-5 absolute top-5 left-0"><FaArrowLeft /> Go Back</button>
                     <div className="card-body">
                         <h2 className="card-title">{meal.strMeal}</h2>
                         <p className="text-sm text-gray-600 mb-2">

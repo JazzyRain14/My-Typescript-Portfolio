@@ -25,14 +25,16 @@ export default function NavBar() {
                             <li><Link to="/aboutme">About Me</Link></li>
                         </ul>
                     </div>
-                    <a className="btn btn-ghost text-xl block max-md:hidden">React * TS</a>
+                    <a className="btn btn-ghost max-md:hidden h-auto" href="#">
+                        <img src="/reactts.svg" alt="React*Ts" className="w-20 h-auto" />
+                    </a>
                 </div>
                 <div className="navbar-end hidden md:flex">
                     <ul className="menu menu-horizontal px-1">
-                        <li><Link to="/" className="flex items-center gap-2 font-semibold"><CiHome size={20}/> Welcome</Link></li>
+                        <li><Link to="/" className="flex items-center gap-2 font-semibold"><CiHome size={20} /> Welcome</Link></li>
                         <li>
                             <details>
-                                <summary className="flex items-center gap-2 font-semibold"><RiCodeView size={20}/> Projects</summary>
+                                <summary className="flex items-center gap-2 font-semibold"><RiCodeView size={20} /> Projects</summary>
                                 <ul className="p-2">
                                     <li><Link to="/todoapp">Todo App</Link></li>
                                     <li><Link to="/taste-book">Taste Book</Link></li>
@@ -43,7 +45,9 @@ export default function NavBar() {
                         <li><Link to="/aboutme" className="flex items-center gap-2 font-semibold">About Me</Link></li>
                     </ul>
                 </div>
-                <a className="btn btn-ghost text-xl hidden max-md:navbar-end">React * TS</a>
+                <a className="btn btn-ghost text-xl hidden max-md:navbar-end">
+                    <img src="/reactts.svg" alt="React*Ts" className="w-20 h-auto" />
+                </a>
             </div>
         </>
     )
