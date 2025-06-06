@@ -7,6 +7,7 @@ import AllProjects from "./pages/AllProjects"
 import AboutMe from "./pages/AboutMe"
 import Todo from "./pages/ToDoAPP/Todo"
 import TasteBook from "./pages/TasteBook/TasteBook"
+import MealDetail from "./pages/MealDetail"
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/todoapp" element={<Todo/>} />
           <Route path="/taste-book" element={<TasteBook />} />
+          <Route path="/meal/:id" element={<MealDetail />} />
           <Route path="/bookshelf" element={<AllProjects/>} />
           <Route path="/aboutme" element={<AboutMe />} />
         </Routes>
