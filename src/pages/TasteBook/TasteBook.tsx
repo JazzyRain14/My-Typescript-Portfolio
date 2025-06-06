@@ -77,7 +77,7 @@ export default function TasteBook() {
             ))}
           </div>
         ) : (
-          <p>no meals found.</p>
+          <p>no meals found. Please choose an alphabet</p>
         )
         }
       </div>

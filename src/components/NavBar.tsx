@@ -7,7 +7,7 @@ export default function NavBar() {
             <div className="navbar bg-base-100 shadow-sm z-30">
                 <div className="navbar-start">
                     <div className="dropdown">
-                        <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+                        <div tabIndex={0} role="button" className="btn btn-ghost md:hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
                         </div>
                         <ul
@@ -25,9 +25,9 @@ export default function NavBar() {
                             <li><Link to="/aboutme">About Me</Link></li>
                         </ul>
                     </div>
-                    <a className="btn btn-ghost text-xl block max-sm:hidden">React * TS</a>
+                    <a className="btn btn-ghost text-xl block max-md:hidden">React * TS</a>
                 </div>
-                <div className="navbar-end hidden lg:flex">
+                <div className="navbar-end hidden md:flex">
                     <ul className="menu menu-horizontal px-1">
                         <li><Link to="/" className="flex items-center gap-2 font-semibold"><CiHome size={20}/> Welcome</Link></li>
                         <li>
@@ -43,7 +43,7 @@ export default function NavBar() {
                         <li><Link to="/aboutme" className="flex items-center gap-2 font-semibold">About Me</Link></li>
                     </ul>
                 </div>
-                <a className="btn btn-ghost text-xl hidden max-sm:navbar-end">React * TS</a>
+                <a className="btn btn-ghost text-xl hidden max-md:navbar-end">React * TS</a>
             </div>
         </>
     )
