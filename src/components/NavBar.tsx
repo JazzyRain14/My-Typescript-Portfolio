@@ -13,16 +13,16 @@ export default function NavBar() {
                         <ul
                             tabIndex={0}
                             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                            <li><Link to="/"><CiHome /> Welcome</Link></li>
+                            <li><Link to="/"  className="text-base"><CiHome /> Welcome</Link></li>
                             <li>
-                                <summary className="flex gap-2 items-center"><RiCodeView size={20} /> Projects</summary>
+                                <summary className="flex gap-2 items-center text-base"><RiCodeView size={20}/> Projects</summary>
                                 <ul className="p-2">
-                                    <li><Link to="/todoapp">Todo App</Link></li>
-                                    <li><Link to="/taste-book">Taste Book</Link></li>
-                                    <li><Link to="/bookshelf">Book Shelf</Link></li>
+                                    <li><Link to="/todoapp" className="text-base">Todo App</Link></li>
+                                    <li><Link to="/taste-book" className="text-base">Taste Book</Link></li>
+                                    <li><Link to="/bookshelf" className="text-base">Book Shelf</Link></li>
                                 </ul>
                             </li>
-                            <li><Link to="/aboutme">About Me</Link></li>
+                            <li><Link to="/aboutme" className="text-base">About Me</Link></li>
                         </ul>
                     </div>
                     <a className="max-md:hidden h-auto" href="#">
